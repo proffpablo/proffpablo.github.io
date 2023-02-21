@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+   <!-- Open Graph data -->
+  <meta property="og:title" content="Proyecto CV" />
+  <meta property="og:type" content="proyect" />
+  <meta property="og:url" content="https://proffpablo.github.io/" />
+  <meta property="og:image" content="/img/vista-previa.jpg" />
+  <meta property="og:description" content="CV que obtiene datos de una API" />
+
+  <title>proyecto CV</title>
+  <link rel="stylesheet" href="/css/styles.css"
+</head>
+
+<body>
+  <script src="js/index.js"></script>
+  <main>
+    <!--SECCION INICIO-->
+    <section id="inicio">
+      <div class="contenido">
+        <header>
+          <div class="contenido-header">
+            <nav id="nav" class="">
+              <ul id="links">
+                <li><a href="#inicio" class="" onclick="seleccionar(this)">INICIO</a></li>
+                <li><a href="#sobre-mi" class="" onclick="seleccionar(this)">SOBRE MI</a></li>
+                <li><a href="#habilidades" class="" onclick="seleccionar(this)">HABILIDADES</a></li>
+                <li><a href="#contacto" class="" onclick="seleccionar(this)">CONTACTO</a></li>
+                </ul>
+            </nav>
+          </div>
+        </header>
+        <div class="presentacion">
+          <p id="bienvenida">Bienvenidos</p>
+          <h2>Soy <span class="name"></span>, Desarrollador Web</h2>
+          <p>Desarrollador Web Frontend dedicado, con el talento para crear soluciones funcionales en el menor tiempo posible. 
+            Incursionando en el mundo de las tecnologías, pero con una solida experiencia en el estudio estructurado y las habilidades de comunicación para buscar nuevas ideas y debatirlas con el fin de siempre estar en crecimiento.
+          </br></br>Veo el desarrollo web como una puerta de entrada al mundo de las tecnologías, para desarrollar el pensamiento lógico y en una segunda etapa poder volcarme a nuevas ramas del desarrollo de software.</p>
+        </div>
+    </section>
+    <!--SECCION SOBRE MI-->
+    <section id="sobre-mi">
+      <div class="contenedor-foto">
+        <img id="profile-photo" alt=""/>
+      </div>
+      <div class="sobre-mi">
+        <p id="titulo-seccion">Sobre Mi</p>
+        <h2>
+          Hola, soy <span class="name"></span>
+        </h2>
+        <h3>Desarrollador Web</h3>
+        <p>
+          Si estas buscando una persona responsable, adaptable y con las habilidades de crear 
+          nuevas soluciones a través de la investigación, el debate y la comunicación estas 
+          en el perfil ideal
+        </p>
+    </section>
+    <!--SECCION HABILIDADES-->
+    <section id="habilidades">
+      <h3 class="titulo-seccion">HABILIDADES</h3>
+      <div class="fila">
+        <div class="habilidad">
+          <img src="img/js-logo.png" alt="">
+        </div>
+        <div class="habilidad">
+          <img src="img/html-logo.png" alt="">
+        </div>
+        <div class="habilidad">
+          <img src="img/css-logo.png" alt="">
+        </div>
+      </div>
+    </section>
+    <!--SECCION CONTACTO-->
+    <section id="contacto">
+      <h3 class="titulo-seccion">Contactame ahora</h3>
+      <div class="contenedor-form">
+        <form action="">
+          <div class="fila mitad">
+            <input type="text" placeholder="Nombre Completo" class="input-mitad">
+            <input type="text" placeholder="Direccion E-mail" class="input-mitad">
+          </div>
+          <div class="fila">
+            <textarea name="" id="" cols="30" rows="10" placeholder="Tu mensaje..." class="input-full"></textarea>
+          </div>
+          <input type="submit" value="Enviar Mensaje" class="btn-enviar">
+        </form>
+      </div>
+      </section>
+
+  </main>
+</body>
+</html>
