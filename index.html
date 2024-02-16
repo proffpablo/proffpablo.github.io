@@ -1,96 +1,249 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 
-   <!-- Open Graph data -->
-  <meta property="og:title" content="Proyecto CV" />
-  <meta property="og:type" content="proyect" />
-  <meta property="og:url" content="https://proffpablo.github.io/" />
-  <meta property="og:image" content="/img/vista-previa.jpg" />
-  <meta property="og:description" content="CV que obtiene datos de una API" />
+    <!-- Open Graph data -->
+    <meta property="og:title" content="Portfolio Pablo Martinez" />
+    <meta property="og:type" content="proyect" />
+    <meta property="og:url" content="https://proffpablo.github.io/" />
+    <meta property="og:image" content="/img/vista-previa.jpg" />
+    <meta property="og:description" content="Fullstack Developer" />
+    <link rel="stylesheet" href="/css/styles.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-  <title>proyecto CV</title>
-  <link rel="stylesheet" href="/css/styles.css"
-</head>
+    <title>Portfolio Pablo Martinez</title>
+    
+  </head>
 
-<body>
-  <script src="js/index.js"></script>
-  <main>
-    <!--SECCION INICIO-->
-    <section id="inicio">
-      <div class="contenido">
-        <header>
-          <div class="contenido-header">
-            <nav id="nav" class="">
-              <ul id="links">
-                <li><a href="#inicio" class="" onclick="seleccionar(this)">INICIO</a></li>
-                <li><a href="#sobre-mi" class="" onclick="seleccionar(this)">SOBRE MI</a></li>
-                <li><a href="#habilidades" class="" onclick="seleccionar(this)">HABILIDADES</a></li>
-                <li><a href="#contacto" class="" onclick="seleccionar(this)">CONTACTO</a></li>
-                <li><a href="https://elevenlabs.io/text-to-speech">elevenlabs</a></li>
-                </ul>
-            </nav>
+  <body>
+    <script src="js/index.js"></script>
+      <!--SECCION INICIO-->
+      <section id="inicio">
+        <div class="contenido">
+          <header>
+            <div class="contenido-header">
+              <nav id="nav" class="">
+                <ul id="links">
+                  <li><a href="#inicio" class="" onclick="seleccionar(this)">INICIO</a></li>
+                  <li><a href="#sobremi" class="" onclick="seleccionar(this)">SOBRE MI</a></li>
+                  <li><a href="#servicios" class="" onclick="seleccionar(this)">HABILIDADES</a></li>
+                  <li><a href="#portfolio" class="" onclick="seleccionar(this)">PORTFOLIO</a></li>
+                  <li><a href="#contacto" class="" onclick="seleccionar(this)">CONTACTO</a></li>
+                  </ul>
+              </nav>
+              <!-- Iconos del menu responsive-->
+              <div id="icono-nav" onclick="responsiveMenu()">
+                <i class="fa-solid fa-bars"></i>
+              </div>
+
+            <!-- Iconos de las redes sociales -->
+              <div class="redes">
+                <a href="https://github.com/proffpablo"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/pablo-andres-martinez-rejas-82413126b/"><i class="fa-brands fa-linkedin"></i></a>
+              </div>
+            </div>
+          </header>
+          <div class="presentacion">
+            <p id="bienvenida">Bienvenidos</p>
+            <h2>Soy <span>Pablo Martinez</span>, Desarrollador Web</h2>
+            <p class="description">Desarrollador Web Full Stack dedicado, con el talento para crear soluciones funcionales en el menor tiempo posible.
+              Incursionando en el mundo de las tecnologías, pero con una solida experiencia en el estudio estructurado y las habilidades de comunicación para buscar nuevas ideas y debatirlas con el fin de siempre estar en crecimiento.
+            </p></br><p>Veo el desarrollo web como una puerta de entrada al mundo de las tecnologías, para desarrollar el pensamiento lógico y en una segunda etapa poder volcarme a nuevas ramas del desarrollo de software.</p>
+            <a href="#portfolio">Ir a Portfolio</a>
           </div>
-        </header>
-        <div class="presentacion">
-          <p id="bienvenida">Bienvenidos</p>
-          <h2>Soy <span class="name"></span>, Desarrollador Web</h2>
-          <p>Desarrollador Web Frontend dedicado, con el talento para crear soluciones funcionales en el menor tiempo posible. 
-            Incursionando en el mundo de las tecnologías, pero con una solida experiencia en el estudio estructurado y las habilidades de comunicación para buscar nuevas ideas y debatirlas con el fin de siempre estar en crecimiento.
-          </br></br>Veo el desarrollo web como una puerta de entrada al mundo de las tecnologías, para desarrollar el pensamiento lógico y en una segunda etapa poder volcarme a nuevas ramas del desarrollo de software.</p>
-        </div>
-    </section>
-    <!--SECCION SOBRE MI-->
-    <section id="sobre-mi">
-      <div class="contenedor-foto">
-        <img id="profile-photo" alt=""/>
-      </div>
-      <div class="sobre-mi">
-        <p id="titulo-seccion">Sobre Mi</p>
-        <h2>
-          Hola, soy <span class="name"></span>
-        </h2>
-        <h3>Desarrollador Web</h3>
-        <p>
-          Si estas buscando una persona responsable, adaptable y con las habilidades de crear 
-          nuevas soluciones a través de la investigación, el debate y la comunicación estas 
-          en el perfil ideal
-        </p>
-    </section>
-    <!--SECCION HABILIDADES-->
-    <section id="habilidades">
-      <h3 class="titulo-seccion">HABILIDADES</h3>
-      <div class="fila">
-        <div class="habilidad">
-          <img src="img/js-logo.png" alt="">
-        </div>
-        <div class="habilidad">
-          <img src="img/html-logo.png" alt="">
-        </div>
-        <div class="habilidad">
-          <img src="img/css-logo.png" alt="">
-        </div>
-      </div>
-    </section>
-    <!--SECCION CONTACTO-->
-    <section id="contacto">
-      <h3 class="titulo-seccion">Contactame ahora</h3>
-      <div class="contenedor-form">
-        <form action="">
-          <div class="fila mitad">
-            <input type="text" placeholder="Nombre Completo" class="input-mitad">
-            <input type="text" placeholder="Direccion E-mail" class="input-mitad">
-          </div>
-          <div class="fila">
-            <textarea name="" id="" cols="30" rows="10" placeholder="Tu mensaje..." class="input-full"></textarea>
-          </div>
-          <input type="submit" value="Enviar Mensaje" class="btn-enviar">
-        </form>
-      </div>
       </section>
-
-  </main>
-</body>
+      <!--SECCION SOBRE MI-->
+      <section id="sobremi">
+        <div class="contenedor-foto">
+          <img src="img/foto.jpg" alt=""/>
+        </div>
+        <div class="sobremi">
+          <p id="titulo-seccion">Sobre Mi</p>
+          <h2>
+            Hola, soy <span class="name"></span>
+          </h2>
+          <h3>Desarrollador Web</h3>
+          <p>
+            Si estas buscando una persona responsable, adaptable y con las habilidades de crear 
+            nuevas soluciones a través de la investigación, el debate y la comunicación estas 
+            en el perfil ideal
+          </p>
+      </section>
+      <!--SECCION HABILIDADES-->
+      <section id="servicios">
+        <h3 class="titulo-seccion">TECH SKILLS</h3>
+        <div class="fila">
+          <div class="servicio">
+            <div class="info">
+              <h4>Java Script</h4>
+              <p>Desarrollo Full Stack</p>
+            </div>
+            <img src="img/js-logo.png" alt="">
+          </div>
+            <div class="servicio">
+              <img src="img/ts-logo.png" alt="">
+              <div class="info">
+                <h4>Type Script</h4>
+                <p>Desarrollo Full Stack</p>
+              </div>
+            </div>
+            <div class="servicio">
+              <img src="img/bootstrap-logo.png" alt="">
+              <div class="info">
+                <h4>Bootstrap</h4>
+                <p>Diseño de sitios y aplicaciones</p>
+              </div>
+            </div>
+            <div class="servicio">
+              <img src="img/next-logo.png" alt="">
+              <div class="info">
+                <h4>Next.js</h4>
+                <p>Desarrolo de aplicaciones</p>
+              </div>
+            </div>
+        </div>
+        <div class="fila">
+          <div class="servicio">
+            <img src="img/react-logo.png" alt="">
+            <div class="info">
+              <h4>React js</h4>
+              <p>Desarrolo Front End</p>
+            </div>
+          </div>
+          <div class="servicio">
+            <img src="img/redux-logo.png" alt="">
+            <div class="info">
+              <h4>Redux</h4>
+              <p>Manejo de estados en React</p>
+            </div>
+          </div>
+          <div class="servicio">
+            <img src="img/node-logo.png" alt="">    
+            <div class="info">
+              <h4>Node js</h4>
+              <p>Desarrollo de servidor</p>
+            </div> 
+          </div>
+          <div class="servicio">
+            <img src="img/postgres-logo.png" alt="">
+            <div class="info">
+              <h4>Postgres</h4>
+              <p>Manejo de Base de Datos</p>
+            </div>
+          </div>
+        </div>
+        <div class="fila">
+          <div class="servicio">
+            <img src="img/html-logo.png" alt="">
+            <div class="info">
+              <h4>HTML</h4>
+              <p>Diseño Web</p>
+            </div>
+          </div>
+            <div class="servicio">
+              <img src="img/css-logo.png" alt="">
+              <div class="info">
+                <h4>CSS</h4>
+                <p>Diseño Web</p>
+              </div>
+            </div>
+            <div class="servicio">
+              <img src="img/less-logo.png" alt="">
+              <div class="info">
+                <h4>LESS</h4>
+                <p>Diseño Web</p>
+              </div>
+            </div>
+            <div class="servicio">
+              <img src="img/sass-logo.png" alt="">
+              <div class="info">
+                <h4>SASS</h4>
+                <p>Diseño Web</p>
+            </div>
+          </div>
+        </div>
+        <div class="fila">
+            <div class="servicio">
+            <img src="img/php-logo.png" alt="">
+            <div class="info">
+                <h4>PHP</h4>
+                <p>Desarrollo Full Stack</p>
+            </div>
+          </div>
+            <div class="servicio">
+                <img src="img/laravel-logo.png" alt="">
+                <div class="info">
+                    <h4>Laravel</h4>
+                    <p>Desarrollo Full Stack</p>
+                </div>
+            </div>
+            <div class="servicio">
+                <img src="img/csharp-logo.png" alt="">
+                <div class="info">
+                    <h4>C#</h4>
+                    <p>Desarrollo en Unity</p>
+                </div>
+            </div>
+            <div class="servicio">
+                <img src="img/mongo-logo.png" alt="">
+                <div class="info">
+                    <h4>Mongo DB</h4>
+                    <p>Manejo de Base de Datos</p>
+                </div>
+            </div>
+          </div>
+        </section>
+  <!--SECCION PORTAFOLIO-->
+  <section id="portfolio">
+    <h3 class="titulo-seccion">ALGUNOS PROYECTOS</h3>
+    <div class="fila">
+        <div class="proyecto">
+            <div class="overlay"></div>
+            <a href="https://github.com/proffpablo/tasks-project-front">
+                <img src="img/proyecto1.jpg" alt="">
+                <div class="info">
+                    <h4>Tasks Fullstack</h4>
+                    <p>Proyecto fullstack para crear tareas con login y autenticacion.</p>
+                </div>
+            </a>
+        </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <a href="https://github.com/KarmaUnder/Foods-Api">
+                    <img src="img/proyecto2.png" alt="">
+                    <div class="info">
+                        <h4>Foods API</h4>
+                        <p>Aplicacion hecha en React para la busqueda y publicacion de recetas de comida</p>
+                    </div>
+                </a>
+            </div>
+  </section>
+      <!--SECCION CONTACTO-->
+      <section id="contacto">
+        <h3 class="titulo-seccion">Contactame ahora</h3>
+        <div class="contenedor-form">
+          <form action="">
+            <div class="fila mitad">
+              <input type="text" placeholder="Nombre Completo" class="input-mitad">
+              <input type="text" placeholder="Direccion E-mail" class="input-mitad">
+            </div>
+            <div class="fila">
+              <textarea name="" id="" cols="30" rows="10" placeholder="Tu mensaje..." class="input-full"></textarea>
+            </div>
+            <input type="submit" value="Enviar Mensaje" class="btn-enviar">
+          </form>
+        </div>
+        </section>
+      <!--SECCION FOOTER-->
+      <footer>
+        <p>Todos los derechos reservados - 2024</p>
+        <div class="redes">
+            <a class ="github" href="https://github.com/proffpablo"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/pablo-andres-martinez-rejas-82413126b/"><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+      </footer>
+  </body>
 </html>
